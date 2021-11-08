@@ -2,12 +2,8 @@
 Imports Microsoft.VisualBasic.Devices
 Imports System.ComponentModel
 Imports System.IO
-Imports IWshRuntimeLibrary
 Public Class Form1
-    Public qwj As Integer = 0
     Dim huh As Integer = 0
-    Public a As String = "ardakc"
-    Declare Function SetProcessWorkingSetSize Lib "kernel32.dll" (ByVal process As IntPtr, ByVal minimumworkingsetsize As Integer, ByVal maximumworkingsetsize As Integer) As Integer
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Not Button1.Text.Contains("Durdur") Then
             Timer1.Start()
